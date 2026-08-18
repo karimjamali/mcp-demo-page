@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Gateway — Customer Capabilities</title>
+<style>
+  :root {
+    --bg: #0b0f19;
+    --hero-bg: #4f46e5;
+    --card-bg: #ffffff;
+    --page-bg: #f5f6fb;
+    --text-dark: #1a1a2e;
+    --text-muted: #5a5f73;
+    --accent: #4f46e5;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--page-bg);
+    color: var(--text-dark);
+  }
+
+  .hero {
+    background-color: var(--hero-bg);
+    color: #ffffff;
+    padding: 96px 24px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin: 0 0 16px;
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .hero p {
+    margin: 0 auto;
+    max-width: 640px;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .features {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .features h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 8px;
+  }
+
+  .features .subhead {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8e9f0;
+  }
+
+  .card .icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(79, 70, 229, 0.1);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1>AI Gateway for Customers</h1>
+  <p>One gateway between your applications and every model provider — built for cost control, reliability, and speed at scale.</p>
+</section>
+
+<section class="features">
+  <h2>Top capabilities customers ask for</h2>
+  <p class="subhead">The features that come up most often in customer conversations</p>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🧭</div>
+      <h3>Semantic Routing</h3>
+      <p>Route each request to the best model by intent and complexity, not a fixed model — matching the task to the right model automatically.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🗜️</div>
+      <h3>Prompt Compression</h3>
+      <p>Automatically shrink prompts to cut token cost and latency, without losing the meaning the model needs to respond correctly.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💻</div>
+      <h3>Code Mode</h3>
+      <p>Let the model call MCP tools by writing and executing code instead of one tool call at a time, reducing round-trips for multi-step tasks.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">♻️</div>
+      <h3>Semantic Caching</h3>
+      <p>Serve cached responses for meaning-equivalent prompts, not just exact matches — cutting redundant calls to the model.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔀</div>
+      <h3>Automatic Failover & Load Balancing</h3>
+      <p>Spread traffic across providers and keys, and fail over automatically on errors or rate limits to keep requests flowing.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔑</div>
+      <h3>Virtual Keys & Budget Governance</h3>
+      <p>Issue per-team or per-key virtual keys with spend limits and usage tracking, so budgets are enforced automatically.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛡️</div>
+      <h3>Guardrails & PII Redaction</h3>
+      <p>Apply policy checks and scrub sensitive data from requests and responses before they reach the model or the caller.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  AI Gateway — built for teams shipping with multiple model providers
+</footer>
+
+</body>
+</html>
